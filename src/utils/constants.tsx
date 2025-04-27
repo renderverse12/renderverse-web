@@ -119,7 +119,7 @@ import commercial23 from "../assets/commercial23.jpg";
 import aerial1 from "../assets/aerial1.png";
 import aerial2 from "../assets/aerial2.png";
 import aerial3 from "../assets/aerial3.png";
-import aerial4 from "../assets/arial4.webp";
+import aerial4 from "../assets/aerial4.webp";
 import aerial5 from "../assets/aerial5.webp";
 import FloorPlan1 from "../assets/FloorPlan1.jpg";
 import FloorPlan2 from "../assets/FloorPlan2.png";
