@@ -203,7 +203,7 @@ import azureConclusion41 from "../assets/azureConclusion41.png";
 import azureConclusion42 from "../assets/azureConclusion42.png";
 import azureConclusion43 from "../assets/azureConclusion43.png";
 import minervaCaseStudy1 from "../assets/MinervaCaseStudy1.jpg";
-import minervaCaseStudy2 from "../assets/MinervaCaseStudy2.jpg";
+import minervaCaseStudy2 from "../assets/minervaCaseStudy2.jpg";
 import minervaCaseStudy3 from "../assets/MinervaCaseStudy3.jpg";
 import minervaCaseStudy4 from "../assets/MinervaCaseStudy4.jpg";
 import minervaCaseStudy5 from "../assets/MinervaCaseStudy5.jpg";
