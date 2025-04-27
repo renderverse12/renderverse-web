@@ -137,7 +137,7 @@ import FloorPlan13 from "../assets/FloorPlan13.jpg";
 import FloorPlan14 from "../assets/FloorPlan14.jpg";
 import FloorPlan15 from "../assets/FloorPlan15.jpg";
 import ContactUs from "../assets/ContactUs.jpg";
-import ContactUs2 from "../assets/Contact.jpg";
+import ContactUs2 from "../assets/contact.jpg";
 import Team1 from "../assets/Team1.png";
 import Team2 from "../assets/Team2.png";
 import Team3 from "../assets/Team3.png";
