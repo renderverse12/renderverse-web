@@ -689,7 +689,7 @@ export const images = {
   pierceProcess10,
   pierceProcess11,
   pierceProcess12,
-  pierceProcess13,
+  // pierceProcess13,
 };
 
 export const videos = {
