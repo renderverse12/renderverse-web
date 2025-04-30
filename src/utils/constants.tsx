@@ -336,7 +336,7 @@ import pierceProcess9 from "../assets/pierceProcess9.jpg";
 import pierceProcess10 from "../assets/pierceProcess10.JPG";
 import pierceProcess11 from "../assets/pierceProcess11.JPG";
 import pierceProcess12 from "../assets/pierceProcess12.JPG";
-// import pierceProcess13 from "../assets/pierceProcess13.JPG";
+import pierceProcess13 from "../assets/pierceProcess13.JPG";
 
 export const routes = {
   home: "/",
@@ -689,7 +689,7 @@ export const images = {
   pierceProcess10,
   pierceProcess11,
   pierceProcess12,
-  // pierceProcess13,
+  pierceProcess13,
 };
 
 export const videos = {

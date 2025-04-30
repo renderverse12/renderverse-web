@@ -2,7 +2,7 @@ import { videos } from "@/utils/constants";
 
 const CompanyHero = () => {
   return (
-    <section className="hero-section w-full h-[30vh] overflow-hidden relative bg-top bg-no-repeat bg-cover text-white">
+    <section className="hero-section w-full h-[30vh] sm:h-[50vh] md:h-[70vh] lg:h-[80vh] overflow-hidden relative bg-top bg-no-repeat bg-cover text-white">
       <video
         className="absolute inset-0 w-full h-full object-cover"
         autoPlay
@@ -13,7 +13,7 @@ const CompanyHero = () => {
         <source src={videos.heroAnimation} type="video/mp4" />
       </video>
 
-      <div className="absolute inset-0  bg-gradient-to-r from-black/80 to-black/15"></div>
+      <div className="absolute inset-0 bg-gradient-to-r from-black/80 to-black/15"></div>
     </section>
   );
 };

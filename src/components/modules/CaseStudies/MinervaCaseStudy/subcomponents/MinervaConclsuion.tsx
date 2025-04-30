@@ -20,22 +20,29 @@ const MinervaConclsuion = () => {
     { id: 5, image: images.minervaConclusion16, height: 1400 },
     { id: 6, image: images.minervaConclusion11, height: 900 },
   ];
+  
   return (
-    <Page styling="bg-[#111] ">
+    <Page styling="bg-[#111]">
       <section className="bg-[#111] py-8 space-y-8">
-        <h2 className="text-4xl font-bold text-gray-100 leading-tight py-2 text-center">
+        <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-gray-100 leading-tight py-2 text-center px-4 sm:px-8">
           Conclusion
         </h2>
+
+        {/* First Masonry Section */}
         <Masonry data={dataOne} />
-        <p className="mb-10 text-center text-gray-300/90 font-semibold text-xl">
+
+        <p className="mb-10 text-center text-gray-300/90 font-semibold text-lg sm:text-xl px-4 sm:px-8">
           Through advanced 3D architectural visualization, Render Verse
           successfully brought Minerva House to life, strengthening its
           positioning in the luxury residential market.
         </p>
+
+        {/* Second Masonry Section */}
         <Masonry data={dataTwo} />
 
+        {/* Quote Section */}
         <i>
-          <p className="my-8 text-center text-gray-300/90 font-bold text-xl">
+          <p className="my-8 text-center text-gray-300/90 font-bold text-lg sm:text-xl px-4 sm:px-8">
             The high-quality visuals successfully conveyed the essence of
             Minerva House, ensuring the design vision was fully realized to meet
             the owner's expectations.

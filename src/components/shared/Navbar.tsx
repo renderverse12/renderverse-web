@@ -1,5 +1,4 @@
 import * as React from "react";
-
 import { cn } from "@/lib/utils";
 import {
   NavigationMenu,
@@ -10,42 +9,56 @@ import {
 } from "@/components/ui/navigation-menu";
 import { routes } from "@/utils/constants";
 
-export function Navbar() {
+interface NavbarProps {
+  mobile?: boolean;
+  onItemClick?: () => void;
+}
+
+export function Navbar({ mobile = false, onItemClick }: NavbarProps) {
   return (
     <NavigationMenu>
-      <NavigationMenuList>
+      <NavigationMenuList
+        className={mobile ? "flex-col space-y-2" : "flex-row space-x-2"}
+      >
         <NavigationMenuItem>
-          <a href={routes.portfolio}>
+          <a href={routes.portfolio} onClick={onItemClick}>
             <NavigationMenuLink
-              className={`navbar-text navbar-text text-white hover:text-white " ${navigationMenuTriggerStyle()}`}
+              className={`navbar-text text-white hover:text-white ${navigationMenuTriggerStyle()} ${
+                mobile ? "w-full justify-start" : ""
+              }`}
             >
               Portfolio
             </NavigationMenuLink>
           </a>
         </NavigationMenuItem>
         <NavigationMenuItem>
-          <a href={routes.caseStudy}>
+          <a href={routes.caseStudy} onClick={onItemClick}>
             <NavigationMenuLink
-              className={`navbar-text navbar-text text-white hover:text-white " ${navigationMenuTriggerStyle()}`}
+              className={`navbar-text text-white hover:text-white ${navigationMenuTriggerStyle()} ${
+                mobile ? "w-full justify-start" : ""
+              }`}
             >
               Case Studies
             </NavigationMenuLink>
           </a>
         </NavigationMenuItem>
-
         <NavigationMenuItem>
-          <a href={routes.services}>
+          <a href={routes.services} onClick={onItemClick}>
             <NavigationMenuLink
-              className={`navbar-text navbar-text text-white hover:text-white " ${navigationMenuTriggerStyle()}`}
+              className={`navbar-text text-white hover:text-white ${navigationMenuTriggerStyle()} ${
+                mobile ? "w-full justify-start" : ""
+              }`}
             >
               Services
             </NavigationMenuLink>
           </a>
         </NavigationMenuItem>
         <NavigationMenuItem>
-          <a href={routes.company}>
+          <a href={routes.company} onClick={onItemClick}>
             <NavigationMenuLink
-              className={`navbar-text navbar-text text-white hover:text-white " ${navigationMenuTriggerStyle()}`}
+              className={`navbar-text text-white hover:text-white ${navigationMenuTriggerStyle()} ${
+                mobile ? "w-full justify-start" : ""
+              }`}
             >
               About Us
             </NavigationMenuLink>

@@ -11,11 +11,33 @@ const PierceCaseStudy = () => {
     <>
       <PierceHero />
       <PierceOverview />
-      <ParallaxSection image={images.pierceProcess1} height="h-[60vh]" />
+
+      {/* Adjust parallax height for mobile */}
+      <div className="hidden md:block">
+        <ParallaxSection
+          image={images.pierceProcess1}
+          height="h-[60vh] md:h-[60vh]"
+        />
+      </div>
+      <div className="md:hidden">
+        {/* Optional: Replace with a static image or different component on mobile */}
+        <ParallaxSection image={images.pierceProcess1} height="h-[40vh]" />
+      </div>
 
       <PierceGoals />
       <PierceProcess />
-      <ParallaxSection image={images.pierceConclusion2} height="h-[80vh]" />
+
+      {/* Adjust conclusion parallax section */}
+      <div className="hidden md:block">
+        <ParallaxSection
+          image={images.pierceConclusion2}
+          height="h-[80vh] md:h-[80vh]"
+        />
+      </div>
+      <div className="md:hidden">
+        <ParallaxSection image={images.pierceConclusion2} height="h-[50vh]" />
+      </div>
+
       <PierceConclusion />
     </>
   );

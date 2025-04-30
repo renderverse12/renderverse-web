@@ -13,32 +13,37 @@ import { Star } from "lucide-react";
 const Testimonials = () => {
   return (
     <Page styling="bg-[#111]">
-      <section className="bg-[#111] grid grid-cols-2 py-10">
-        <div className="font-openSans font-semibold text-newWhite mt-10">
-          <p
-            className="text-6xl text-gray-200"
-            data-aos="fade-up"
-            data-aos-duration="2000"
-          >
-            Here's what people have to say about hiring us.
-          </p>
-        </div>
-        <Carousel>
-          <CarouselContent>
-            {testimonialData.map(
-              ({ id, name, occupation, description, rating }) => (
-                <CarouselItem key={id} className="w-56 p-10 relative">
-                  <Card className="bg-transparent border-gray-300/90">
+      <section className="bg-[#111] py-10 px-4 md:px-0">
+        {/* Grid: 1 col on mobile, 2 cols on md+ */}
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+          {/* Heading */}
+          <div className="font-openSans font-semibold text-newWhite mt-4 md:mt-10">
+            <p
+              className="text-4xl sm:text-5xl md:text-6xl text-gray-200"
+              data-aos="fade-up"
+              data-aos-duration="2000"
+            >
+              Here's what people have to say about hiring us.
+            </p>
+          </div>
+
+          {/* Right Cell: carousel on md+, vertical list on mobile */}
+          <div className="w-full">
+            {/* Mobile: vertical stack */}
+            <div className="flex flex-col gap-8 md:hidden mt-6">
+              {testimonialData.map(
+                ({ id, name, occupation, description, rating }) => (
+                  <Card
+                    key={id}
+                    className="bg-transparent border-gray-300/90 w-full"
+                  >
                     <CardContent className="p-6 rounded-xl flex flex-col items-center">
-                      {/* Dynamically render stars based on rating */}
                       <div className="flex gap-x-1">
-                        {[...Array(5)].map((_, index) => (
+                        {[...Array(5)].map((_, i) => (
                           <Star
-                            key={index}
+                            key={i}
                             color="#ffcc14"
-                            fill={
-                              index < Math.floor(rating) ? "#ffcc14" : "none"
-                            }
+                            fill={i < Math.floor(rating) ? "#ffcc14" : "none"}
                             size={20}
                           />
                         ))}
@@ -57,13 +62,58 @@ const Testimonials = () => {
                       </div>
                     </CardContent>
                   </Card>
-                </CarouselItem>
-              )
-            )}
-          </CarouselContent>
-          <CarouselPrevious className="absolute top-[300px] left-[80%] bg-transparent border-none hover:bg-transparent text-gray-300 hover:text-gray-300" />
-          <CarouselNext className="absolute  top-[300px] left-[87%] bg-transparent border-none hover:bg-transparent text-gray-300 hover:text-gray-300" />
-        </Carousel>
+                )
+              )}
+            </div>
+
+            {/* Desktop + Laptop: original carousel */}
+            <div className="hidden md:block">
+              <Carousel className="w-full">
+                <CarouselContent>
+                  {testimonialData.map(
+                    ({ id, name, occupation, description, rating }) => (
+                      <CarouselItem
+                        key={id}
+                        className="w-full sm:w-80 md:w-56 p-6 sm:p-10 relative mx-auto"
+                      >
+                        <Card className="bg-transparent border-gray-300/90">
+                          <CardContent className="p-6 rounded-xl flex flex-col items-center">
+                            <div className="flex gap-x-1">
+                              {[...Array(5)].map((_, i) => (
+                                <Star
+                                  key={i}
+                                  color="#ffcc14"
+                                  fill={
+                                    i < Math.floor(rating) ? "#ffcc14" : "none"
+                                  }
+                                  size={20}
+                                />
+                              ))}
+                            </div>
+
+                            <p className="text-md mt-4 text-center text-gray-300/90 font-medium">
+                              {description}
+                            </p>
+                            <div className="text-end w-full mt-2">
+                              <p className="text-lg font-bold text-gray-200">
+                                — {name}
+                              </p>
+                              <span className="text-md font-semibold text-gray-300">
+                                {occupation}
+                              </span>
+                            </div>
+                          </CardContent>
+                        </Card>
+                      </CarouselItem>
+                    )
+                  )}
+                </CarouselContent>
+                <CarouselPrevious className="absolute top-[300px] left-[80%] bg-transparent border-none hover:bg-transparent text-gray-300" />
+                <CarouselNext className="absolute top-[300px] left-[87%] bg-transparent border-none hover:bg-transparent text-gray-300" />
+              </Carousel>
+            </div>
+          </div>
+        </div>
       </section>
     </Page>
   );

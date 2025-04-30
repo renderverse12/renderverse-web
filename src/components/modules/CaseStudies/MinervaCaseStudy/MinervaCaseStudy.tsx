@@ -11,14 +11,20 @@ const MinervaCaseStudy = () => {
   return (
     <>
       <MinervaHero />
-      <h2 className="text-6xl py-10 font-bold text-center text-gray-200 bg-[#111] leading-tight ">
+      <h2 className="text-4xl sm:text-5xl md:text-6xl py-10 font-bold text-center text-gray-200 bg-[#111] leading-tight px-4 sm:px-8 md:px-12">
         Minerva House
       </h2>
       <MinervaOverview />
-      <ParallaxSection image={images.minervaCaseStudy7} height="h-[60vh]" />
+      <ParallaxSection
+        image={images.minervaCaseStudy7}
+        height="h-[60vh] sm:h-[70vh] md:h-[80vh]"
+      />
       <MinervaGoals />
       <MinervaProcess />
-      <ParallaxSection image={images.minervaConclusion4} height="h-[60vh]" />
+      <ParallaxSection
+        image={images.minervaConclusion4}
+        height="h-[60vh] sm:h-[70vh] md:h-[80vh]"
+      />
       <MinervaConclsuion />
 
       <CallToAction

@@ -8,14 +8,20 @@ const AzureProcess = () => {
       <h2
         data-aos="fade-up"
         data-aos-duration="1000"
-        className="text-4xl font-bold text-gray-100 leading-tight py-2 text-center px-60"
+        className="text-4xl font-bold text-gray-100 leading-tight py-2 text-center px-4 sm:px-12 md:px-20 lg:px-60"
       >
         Process
       </h2>
+
       <div className="flex flex-col gap-y-10">
-        <div className="flex items-center justify-center gap-x-10 text-gray-300/90 font-semibold text-xl px-60">
-          <p data-aos="fade-up" data-aos-duration="1000" className="w-1/2 ">
-            1.
+        {/* Step 1 */}
+        <div className="flex flex-col lg:flex-row items-center justify-center gap-y-6 lg:gap-x-10 text-gray-300/90 font-semibold text-xl px-4 sm:px-10 lg:px-60">
+          <p
+            data-aos="fade-up"
+            data-aos-duration="1000"
+            className="lg:w-1/2 text-center lg:text-left"
+          >
+            1.{" "}
             <span className="font-bold text-gray-200">
               Understanding Client Vision:
             </span>{" "}
@@ -24,21 +30,30 @@ const AzureProcess = () => {
           </p>
           <img
             src={images.azureProcess9}
-            className="h-72"
+            className="h-72 w-full max-w-md object-cover"
             data-aos="zoom-in"
             data-aos-duration="700"
+            alt="Process Step 1"
           />
         </div>
+
         <ParallaxSection image={images.azureConclusion35} height="h-[50vh]" />
-        <div className="flex items-center justify-center gap-x-10 text-gray-300/90 font-semibold text-xl px-60">
+
+        {/* Step 2 */}
+        <div className="flex flex-col-reverse lg:flex-row items-center justify-center gap-y-6 lg:gap-x-10 text-gray-300/90 font-semibold text-xl px-4 sm:px-10 lg:px-60">
           <img
             src={images.azureProcess8}
-            className="h-72"
+            className="h-72 w-full max-w-md object-cover"
             data-aos="zoom-in"
             data-aos-duration="700"
+            alt="Process Step 2"
           />
-          <p data-aos="fade-up" data-aos-duration="1000" className="w-1/2 ">
-            2.
+          <p
+            data-aos="fade-up"
+            data-aos-duration="1000"
+            className="lg:w-1/2 text-center lg:text-left"
+          >
+            2.{" "}
             <span className="font-bold text-gray-200">
               Interior Renderings:
             </span>{" "}
@@ -46,21 +61,43 @@ const AzureProcess = () => {
             elegance and African-inspired design elements.
           </p>
         </div>
+
         <Separator />
+
         <i className="text-gray-300 text-center capitalize font-semibold">
           Items used
         </i>
-        <div className="flex h-72 justify-center py-10 gap-x-14">
-          <img src={images.azureProcess2} alt="" />
-          <img src={images.azureProcess3} alt="" />
-          <img src={images.azureProcess4} alt="" />
-          <img src={images.azureProcess5} alt="" />
-          <img src={images.azureProcess6} alt="" />
+
+        {/* Items used */}
+        <div className="overflow-x-auto lg:overflow-hidden h-72 py-10 pl-4">
+          <div className="flex gap-x-6 min-w-fit">
+            {[
+              images.azureProcess2,
+              images.azureProcess3,
+              images.azureProcess4,
+              images.azureProcess5,
+              images.azureProcess6,
+            ].map((img, idx) => (
+              <img
+                key={idx}
+                src={img}
+                alt={`Item ${idx + 1}`}
+                className="h-full object-cover w-auto flex-shrink-0"
+              />
+            ))}
+          </div>
         </div>
+
         <Separator />
-        <div className="flex items-center justify-center gap-x-10 text-gray-300/90 font-semibold text-xl px-60">
-          <p data-aos="fade-up" data-aos-duration="1000" className="w-1/2 ">
-            3.
+
+        {/* Step 3 */}
+        <div className="flex flex-col lg:flex-row items-center justify-center gap-y-6 lg:gap-x-10 text-gray-300/90 font-semibold text-xl px-4 sm:px-10 lg:px-60">
+          <p
+            data-aos="fade-up"
+            data-aos-duration="1000"
+            className="lg:w-1/2 text-center lg:text-left"
+          >
+            3.{" "}
             <span className="font-bold text-gray-200">
               Exterior Renderings:
             </span>{" "}
@@ -69,22 +106,30 @@ const AzureProcess = () => {
           </p>
           <img
             src={images.azureProcess1}
-            className="h-72"
+            className="h-72 w-full max-w-md object-cover"
             data-aos="zoom-in"
             data-aos-duration="700"
+            alt="Process Step 3"
           />
         </div>
+
         <ParallaxSection image={images.azureConclusion36} height="h-[50vh]" />
 
-        <div className="flex items-center justify-center gap-x-10 text-gray-300/90 font-semibold text-xl px-60">
+        {/* Step 4 */}
+        <div className="flex flex-col-reverse lg:flex-row items-center justify-center gap-y-6 lg:gap-x-10 text-gray-300/90 font-semibold text-xl px-4 sm:px-10 lg:px-60">
           <img
             src={images.azureProcess10}
-            className="h-72"
+            className="h-72 w-full max-w-md object-cover"
             data-aos="zoom-in"
             data-aos-duration="700"
+            alt="Process Step 4"
           />
-          <p data-aos="fade-up" data-aos-duration="1000" className="w-1/2 ">
-            4.
+          <p
+            data-aos="fade-up"
+            data-aos-duration="1000"
+            className="lg:w-1/2 text-center lg:text-left"
+          >
+            4.{" "}
             <span className="font-bold text-gray-200">
               Walkthrough Animation:
             </span>{" "}
@@ -92,20 +137,26 @@ const AzureProcess = () => {
             potential buyers with an engaging and detailed project exploration.
           </p>
         </div>
+
         <ParallaxSection image={images.azureConclusion38} height="h-[50vh]" />
 
-        <div className="flex items-center justify-center gap-x-10 text-gray-300/90 font-semibold text-xl px-60">
-          <p data-aos="fade-up" data-aos-duration="1000" className="w-1/2 ">
-            5.
-            <span className="font-bold text-gray-200">Virtual Tour:</span>{" "}
+        {/* Step 5 */}
+        <div className="flex flex-col lg:flex-row items-center justify-center gap-y-6 lg:gap-x-10 text-gray-300/90 font-semibold text-xl px-4 sm:px-10 lg:px-60">
+          <p
+            data-aos="fade-up"
+            data-aos-duration="1000"
+            className="lg:w-1/2 text-center lg:text-left"
+          >
+            5. <span className="font-bold text-gray-200">Virtual Tour:</span>{" "}
             Designed an interactive 360° tour to offer a dynamic preview of the
             living experience.
           </p>
           <img
             src={images.azureProcess7}
-            className="h-72"
+            className="h-72 w-full max-w-md object-cover"
             data-aos="zoom-in"
             data-aos-duration="700"
+            alt="Process Step 5"
           />
         </div>
       </div>

@@ -11,10 +11,12 @@ const AzureCaseStudy = () => {
   return (
     <>
       <AzureHero />
-      <h2 className="text-6xl py-10 font-bold text-center text-gray-200 bg-[#111] leading-tight ">
+      <h2 className="text-4xl sm:text-5xl md:text-6xl px-4 py-10 font-bold text-center text-gray-200 bg-[#111] leading-tight">
         Azure II
       </h2>
+
       <AzureOverview />
+
       <ParallaxSection image={images.azureCaseStudy3} />
 
       <AzureGoals />

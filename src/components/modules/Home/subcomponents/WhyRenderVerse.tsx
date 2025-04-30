@@ -7,7 +7,7 @@ const WhyRenderVerse = () => {
   const navigate = useNavigate();
   return (
     <Page styling="bg-[#111]">
-      <section className="flex  flex-col md:flex-row items-center justify-center bg-[#111] py-12">
+      <section className="flex flex-col md:flex-row items-center justify-center bg-[#111] py-8 md:py-12 px-4 md:px-0">
         {/* Left Side - Image */}
         <div className="relative w-full md:w-[40%] flex justify-center">
           <img
@@ -15,23 +15,23 @@ const WhyRenderVerse = () => {
             data-aos-duration="700"
             src={images.interior44}
             alt="Render Verse Visualization"
-            className="max-w-full h-[70vh] rounded-lg shadow-lg"
+            className="max-w-full h-[50vh] md:h-[70vh] rounded-lg shadow-lg"
           />
         </div>
 
         {/* Right Side - Content */}
-        <div className="w-full md:w-[70%] mt-8 md:mt-0 md:pl-10">
+        <div className="w-full md:w-[60%] mt-8 md:mt-0 md:pl-10 px-4 md:px-0">
           <h2
             data-aos="fade-up"
             data-aos-duration="700"
-            className="text-5xl font-bold text-gray-200 leading-tight mb-10"
+            className="text-3xl md:text-5xl font-bold text-gray-200 leading-tight mb-6 md:mb-10"
           >
             Render Verse is a leading 3D visualization studio.
           </h2>
           <p
             data-aos="fade-up"
             data-aos-duration="900"
-            className="mt-4 text-3xl text-gray-300 font-semibold"
+            className="mt-4 text-xl md:text-3xl text-gray-300 font-semibold"
           >
             Delivering high-end rendering solutions for the heart of Middle
             Eastern real estate.
@@ -39,7 +39,7 @@ const WhyRenderVerse = () => {
           <p
             data-aos="fade-up"
             data-aos-duration="1000"
-            className=" text-gray-300/90 font-semibold text-xl mt-6"
+            className="text-gray-300/90 font-semibold text-base md:text-xl mt-4 md:mt-6"
           >
             We specialize in hyper-realistic exterior and interior
             visualizations, helping developers, architects, and investors bring
@@ -50,7 +50,7 @@ const WhyRenderVerse = () => {
           </p>
 
           <Button
-            className="mt-6 bg-[#2176ff] text-white px-6 py-3 rounded-lg shadow-md hover:bg-[#1a5bb7]"
+            className="mt-6 bg-[#2176ff] text-white px-6 py-3 rounded-lg shadow-md hover:bg-[#1a5bb7] text-sm md:text-base"
             onClick={() => {
               navigate(routes.caseStudy);
             }}

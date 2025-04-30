@@ -11,6 +11,7 @@ const AzureConclusion = () => {
     { id: 5, image: images.azureConclusion5, height: 800 },
     { id: 6, image: images.azureConclusion16, height: 600 },
   ];
+
   const dataTwo = [
     { id: 2, image: images.azureConclusion32, height: 600 },
     { id: 1, image: images.azureConclusion39, height: 1600 },
@@ -19,22 +20,26 @@ const AzureConclusion = () => {
     { id: 5, image: images.azureConclusion42, height: 1600 },
     { id: 6, image: images.azureConclusion31, height: 600 },
   ];
+
   return (
-    <Page styling="bg-[#111] ">
-      <section className="bg-[#111] py-8 space-y-8">
-        <h2 className="text-4xl font-bold text-gray-100 leading-tight py-2 text-center">
+    <Page styling="bg-[#111]">
+      <section className="bg-[#111] py-10 px-4 sm:px-6 md:px-10 space-y-10">
+        <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-gray-100 leading-tight text-center">
           Conclusion
         </h2>
+
         <Masonry data={dataOne} />
-        <p className="mb-10 text-center text-gray-300/90 font-semibold text-xl">
+
+        <p className="text-center text-gray-300/90 font-semibold text-lg sm:text-xl max-w-3xl mx-auto">
           Through the power of 3D architectural visualization, Render Verse
           successfully translated The Village Group’s vision into a compelling
           digital experience.
         </p>
+
         <Masonry data={dataTwo} />
 
         <i>
-          <p className="my-8 text-center text-gray-300/90 font-bold text-xl">
+          <p className="text-center text-gray-300/90 font-bold text-lg sm:text-xl max-w-4xl mx-auto">
             The Azure II project now stands as a benchmark for luxury real
             estate in Zanzibar, leveraging high-quality visuals to drive sales
             and investor confidence.
