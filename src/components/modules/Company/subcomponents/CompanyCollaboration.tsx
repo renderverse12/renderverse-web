@@ -1,7 +1,10 @@
 import SpotlightCard from "@/blocks/Components/SpotlightCard/SpotlightCard";
 import Page from "@/components/shared/Page";
+import { useTranslation } from "react-i18next"; // Import useTranslation
 
 const CompanyCollaboration = () => {
+  const { t } = useTranslation(); // Hook to get translation
+
   return (
     <Page styling="bg-[#111]">
       <section className="py-8 bg-[#111] px-4 sm:px-6 md:px-0">
@@ -10,7 +13,7 @@ const CompanyCollaboration = () => {
           data-aos-duration="700"
           className="text-3xl sm:text-4xl md:text-5xl font-bold text-center text-gray-200 leading-tight mb-6 mt-8"
         >
-          We Collaborate with
+          {t("company.collaboration.title")} {/* Translated title */}
         </h2>
 
         <div
@@ -23,10 +26,12 @@ const CompanyCollaboration = () => {
             spotlightColor="rgba(33,118,255,0.2)"
           >
             <p className="text-lg sm:text-xl font-bold text-gray-200 leading-tight text-center mb-6 sm:mb-10">
-              Real Estate Developers
+              {t("company.collaboration.realEstateDevelopers.title")}{" "}
+              {/* Translated text */}
             </p>
             <p className="text-gray-300/90 font-semibold text-base sm:text-lg mt-2 text-center">
-              Driving off-plan sales with compelling visuals.
+              {t("company.collaboration.realEstateDevelopers.description")}{" "}
+              {/* Translated text */}
             </p>
           </SpotlightCard>
 
@@ -35,10 +40,12 @@ const CompanyCollaboration = () => {
             spotlightColor="rgba(33,118,255,0.2)"
           >
             <p className="text-lg sm:text-xl font-bold text-gray-200 leading-tight text-center mb-6 sm:mb-10">
-              Architects & Designers
+              {t("company.collaboration.architectsAndDesigners.title")}{" "}
+              {/* Translated text */}
             </p>
             <p className="text-gray-300/90 font-semibold text-base sm:text-lg mt-2 text-center">
-              Bringing design concepts to life with precision.
+              {t("company.collaboration.architectsAndDesigners.description")}{" "}
+              {/* Translated text */}
             </p>
           </SpotlightCard>
 
@@ -47,10 +54,14 @@ const CompanyCollaboration = () => {
             spotlightColor="rgba(33,118,255,0.2)"
           >
             <p className="text-lg sm:text-xl font-bold text-gray-200 leading-tight text-center mb-6 sm:mb-10">
-              Marketing Agencies & Investors
+              {t("company.collaboration.marketingAgenciesAndInvestors.title")}{" "}
+              {/* Translated text */}
             </p>
             <p className="text-gray-300/90 font-semibold text-base sm:text-lg mt-2 text-center">
-              Elevating project presentations for maximum impact.
+              {t(
+                "company.collaboration.marketingAgenciesAndInvestors.description"
+              )}{" "}
+              {/* Translated text */}
             </p>
           </SpotlightCard>
         </div>

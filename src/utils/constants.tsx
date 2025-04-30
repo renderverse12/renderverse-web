@@ -730,32 +730,28 @@ export const testimonialData = [
     id: 1,
     name: "Nikki",
     occupation: "Interior Designer",
-    description:
-      "These guys truly understand how to bring a design to life before it’s even built. The renderings for the Caribbean Hut perfectly captured the warmth and atmosphere I envisioned. My client was able to see the entire concept in detail, making approvals and execution much smoother!",
+    descriptionKey: "testimonials.desc1",
     rating: 5,
   },
   {
     id: 2,
     name: "Luca Apicella",
     occupation: "Property Owner",
-    description:
-      "When pitching to investors, first impressions are everything. These 3D visualizations helped me communicate my project’s value in a way that words and sketches simply couldn’t. The clarity and realism of the visuals made all the difference in securing funding.",
+    descriptionKey: "testimonials.desc2",
     rating: 5,
   },
   {
     id: 3,
     name: "Hadi Teherany",
     occupation: "Property Owner",
-    description:
-      "I needed top-quality visuals to showcase my project’s potential, and Haseeb delivered beyond expectations. His renderings didn’t just look great—they told a story, making it easier to engage investors and move forward with confidence. A fantastic experience from start to finish!",
+    descriptionKey: "testimonials.desc3",
     rating: 5,
   },
   {
     id: 4,
     name: "Real Estate Developer",
     occupation: "Miami",
-    description:
-      "Pre-sales can be challenging without strong visuals, but Render Verse gave us a major advantage. They helped us with realistic visualizations that captured the audience’s attention immediately, boosting our off-plan sales.",
+    descriptionKey: "testimonials.desc4",
     rating: 4,
   },
 ];
@@ -877,14 +873,14 @@ export const caseStudiesData = [
     title: "1920 Pierce Case Study",
     description:
       "1920 Pierce blends classic elegance with modern coastal living in the heart of Hollywood, FL. Discover how our high-end 3D visualizations brought this sophisticated development to life.",
-    image: images.interior2,
+    image: images.minervaCaseStudy2,
     link: "1920-pierce-project",
   },
   {
     title: "Minerva House Case Study",
     description:
       "Minerva House redefines luxury living with its seamless blend of modern elegance and comfort. Explore how our high-end 3D visualizations brought this stunning private residence to life in every detail.",
-    image: images.interior3,
+    image: images.exterior9,
     link: "minerva-house-project",
   },
 ];

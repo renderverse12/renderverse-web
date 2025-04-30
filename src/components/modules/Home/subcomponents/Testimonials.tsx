@@ -9,8 +9,11 @@ import {
 } from "@/components/ui/carousel";
 import { testimonialData } from "@/utils/constants";
 import { Star } from "lucide-react";
+import { useTranslation } from "react-i18next"; // Import useTranslation hook
 
 const Testimonials = () => {
+  const { t } = useTranslation(); // Initialize translation function
+
   return (
     <Page styling="bg-[#111]">
       <section className="bg-[#111] py-10 px-4 md:px-0">
@@ -23,7 +26,7 @@ const Testimonials = () => {
               data-aos="fade-up"
               data-aos-duration="2000"
             >
-              Here's what people have to say about hiring us.
+              {t("testimonials.heading")} {/* Dynamic heading */}
             </p>
           </div>
 
@@ -32,7 +35,7 @@ const Testimonials = () => {
             {/* Mobile: vertical stack */}
             <div className="flex flex-col gap-8 md:hidden mt-6">
               {testimonialData.map(
-                ({ id, name, occupation, description, rating }) => (
+                ({ id, name, occupation, descriptionKey, rating }) => (
                   <Card
                     key={id}
                     className="bg-transparent border-gray-300/90 w-full"
@@ -50,7 +53,7 @@ const Testimonials = () => {
                       </div>
 
                       <p className="text-md mt-4 text-center text-gray-300/90 font-medium">
-                        {description}
+                        {t(descriptionKey)} {/* Use translation key */}
                       </p>
                       <div className="text-end w-full mt-2">
                         <p className="text-lg font-bold text-gray-200">
@@ -71,7 +74,7 @@ const Testimonials = () => {
               <Carousel className="w-full">
                 <CarouselContent>
                   {testimonialData.map(
-                    ({ id, name, occupation, description, rating }) => (
+                    ({ id, name, occupation, descriptionKey, rating }) => (
                       <CarouselItem
                         key={id}
                         className="w-full sm:w-80 md:w-56 p-6 sm:p-10 relative mx-auto"
@@ -92,7 +95,7 @@ const Testimonials = () => {
                             </div>
 
                             <p className="text-md mt-4 text-center text-gray-300/90 font-medium">
-                              {description}
+                              {t(descriptionKey)} {/* Use translation key */}
                             </p>
                             <div className="text-end w-full mt-2">
                               <p className="text-lg font-bold text-gray-200">

@@ -1,15 +1,18 @@
 import { images } from "@/utils/constants";
 import Marquee from "react-fast-marquee";
+import { useTranslation } from "react-i18next";
 
 const TrustedPartners = () => {
+  const { t } = useTranslation();
+
   return (
     <div className="bg-black/40 h-[40vh] py-4">
       <h2 className="text-5xl font-bold text-gray-200 text-center leading-tight mb-4">
-        Trusted Partners
+        {t("trustedPartners.title")}
       </h2>
 
       {/* Mobile: static logos in 2-column grid */}
-      <div className="grid grid-cols-2 gap-4 px-4 sm:hidden">
+      <div className="grid grid-cols-2 gap-4 px-4 sm:hidden mb-10">
         <img
           src={images.trustedPartnersWhite1}
           alt=""

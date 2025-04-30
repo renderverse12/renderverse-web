@@ -1,0 +1,255 @@
+{
+  "hero": {
+    "title": "Elevate Sales with Visual Excellence",
+    "subtitle": {
+      "part1": "Render verse helps developers sell more with cinematic visuals",
+      "part2": "that turn interest into investment."
+    }
+  },
+  "contactUs": "Contact Us",
+  "portfolio": "Portfolio",
+  "caseStudies": "Case Studies",
+  "services": "Services",
+  "aboutUs": "About Us",
+  "featuredProjects": {
+    "title": "Featured Projects",
+    "viewProject": "View Project",
+    "projects": [
+      {
+        "title": "1920 Pierce",
+        "description": "1920 Pierce offers a refined living experience, blending classic elegance with modern comfort. Ideally located in Hollywood, FL, near Fort Lauderdale and Aventura, it provides ...",
+        "action": "/pierce",
+        "src": "featuredOne"
+      },
+      {
+        "title": "Minerva House",
+        "description": "Minerva House is a distinguished private residence in New Jersey, embodying a perfect balance of contemporary elegance and comfort. Thoughtfully designed with a focus on refined living, the property seamlessly integrates ...",
+        "action": "/minerva",
+        "src": "featuredTwo"
+      },
+      {
+        "title": "Azure II",
+        "description": "Azure II Paje is an upcoming luxury residential development by The Village Group, situated in Paje on Zanzibar's east coast. Designed to offer an unparalleled blend of modern luxury and natural beauty ...",
+        "action": "/azure",
+        "src": "featuredThree"
+      }
+    ]
+  },
+  "whyRenderVerse": {
+    "image": "interior44",
+    "heading": "Render Verse is a leading 3D visualization studio.",
+    "subheading": "Delivering high-end rendering solutions for the heart of Middle Eastern real estate.",
+    "description": "We specialize in hyper-realistic exterior and interior visualizations, helping developers, architects, and investors bring projects to market with confidence. From luxury residences and commercial developments to off-plan sales and large-scale master plans, our expertise ensures every detail is presented with precision and impact.",
+    "buttonText": "Discover Our Visualization Solutions"
+  },
+  "trustedPartners": {
+    "title": "Trusted Partners"
+  },
+  "iconsText": {
+    "brandVisibility": {
+      "title": "Brand Visibility",
+      "description": "Capture attention with stunning 3D visuals that set your projects apart."
+    },
+    "newConversions": {
+      "title": "New Conversions",
+      "description": "Turn interest into action with immersive, pre-construction previews."
+    },
+    "accelerateSales": {
+      "title": "Accelerate Sales",
+      "description": "Help buyers decide faster with clear, compelling visuals."
+    },
+    "enhancedCommunication": {
+      "title": "Enhanced Client Communications",
+      "description": "Streamline discussions with realistic renderings that speak for themselves."
+    }
+  },
+  "testimonials": {
+    "heading": "Here's what people have to say about hiring us.",
+    "desc1": "These guys truly understand how to bring a design to life before it’s even built. The renderings for the Caribbean Hut perfectly captured the warmth and atmosphere I envisioned. My client was able to see the entire concept in detail, making approvals and execution much smoother!",
+    "desc2": "When pitching to investors, first impressions are everything. These 3D visualizations helped me communicate my project’s value in a way that words and sketches simply couldn’t. The clarity and realism of the visuals made all the difference in securing funding.",
+    "desc3": "I needed top-quality visuals to showcase my project’s potential, and Haseeb delivered beyond expectations. His renderings didn’t just look great—they told a story, making it easier to engage investors and move forward with confidence. A fantastic experience from start to finish!",
+    "desc4": "Pre-sales can be challenging without strong visuals, but Render Verse gave us a major advantage. They helped us with realistic visualizations that captured the audience’s attention immediately, boosting our off-plan sales."
+  },
+  "cta": {
+    "getStarted": "Get Started Now"
+  },
+  "taglineKey": "Elevate Your Projects with Stunning Visuals",
+  "taglineTwoKey": "See your designs come to life with high-quality renderings.",
+  "faq": {
+    "title": "Frequently Asked Questions",
+    "q1": "How do you ensure accuracy in your renders?",
+    "a1": "We use architectural blueprints, CAD files, and real-world material references, applying advanced lighting and texturing for lifelike results.",
+    "q2": "What sets Render Verse apart from other 3D studios?",
+    "a2": "We focus on sales-driven visualization, combining photorealism with strategic marketing insights to create visuals that convert prospects into buyers.",
+    "q3": "How does 3D visualization help real estate pre-sales and marketing?",
+    "a3": "We craft emotionally compelling visuals that highlight key selling points, material finishes, and lighting atmospheres, enhancing buyer perception and accelerating off-plan sales.",
+    "q4": "What is your typical project workflow?",
+    "a4": "Consultation – Understanding goals and design details. 3D Modeling – Creating accurate structures. Texturing & Lighting – Enhancing realism. Rendering & Post-Production – Finalizing high-quality visuals. Delivery & Revisions – Ensuring perfection.",
+    "q5": "Do you offer interactive experiences or VR?",
+    "a5": "Yes! We provide 360° virtual tours and immersive walkthroughs, enhancing buyer engagement and marketing impact.",
+    "q6": "What's your approach to large-scale projects with multiple phases?",
+    "a6": "We implement a structured pipeline, version control, and iterative approvals, ensuring seamless collaboration for phased developments, master plans, and large real estate portfolios.",
+    "q7": "How does your team handle revisions and client feedback?",
+    "a7": "We follow a layered revision system, addressing design refinements efficiently while maintaining project timelines, ensuring a smooth workflow without compromising quality.",
+    "moreQuestions": "Have more questions?",
+    "contactUs": "Contact us here"
+  },
+  "footer": {
+    "services": {
+      "title": "Services",
+      "links": {
+        "exterior": "Exterior",
+        "interior": "Interior",
+        "commercial": "Commercial",
+        "3dFloorPlans": "3D Floor Plans",
+        "virtualTour": "Virtual Tour"
+      }
+    },
+    "company": {
+      "title": "Company",
+      "links": {
+        "aboutUs": "About us",
+        "contact": "Contact"
+      }
+    },
+    "legal": {
+      "title": "Legal",
+      "links": {
+        "terms": "Terms",
+        "privacy": "Privacy",
+        "licenses": "Licenses"
+      }
+    },
+    "contactInfo": {
+      "phone": "+92 337-3146719",
+      "email": "info@therenderverse.com"
+    }
+  },
+
+  "company": {
+    "aboutUs": {
+      "title": "About Us",
+      "description1": "Founded with a vision to redefine architectural visualization, Render Verse has grown into a trusted partner for real estate developers, architects, and investors across the heart of Middle Eastern real estate and beyond.",
+      "description2": "Our journey began with a commitment to delivering hyper-realistic 3D visualizations that bring unbuilt projects to life, helping clients bridge the gap between concept and reality."
+    },
+    "collaboration": {
+      "title": "We Collaborate with",
+      "realEstateDevelopers": {
+        "title": "Real Estate Developers",
+        "description": "Driving off-plan sales with compelling visuals."
+      },
+      "architectsAndDesigners": {
+        "title": "Architects & Designers",
+        "description": "Bringing design concepts to life with precision."
+      },
+      "marketingAgenciesAndInvestors": {
+        "title": "Marketing Agencies & Investors",
+        "description": "Elevating project presentations for maximum impact."
+      }
+    },
+    "mission": {
+      "title": "Our Mission",
+      "description": "To empower real estate and architectural professionals with cutting-edge 3D visualization solutions, enabling them to sell off-plan properties, secure investments, and enhance marketing strategies with clarity and confidence."
+    }
+  },
+  "team": {
+    "title": "The Team",
+    "members": [
+      {
+        "name": "Syed Maaz",
+        "role": "Founder & CEO"
+      },
+      {
+        "name": "Haseeb",
+        "role": "Lead Visualizer"
+      },
+      {
+        "name": "Bilal",
+        "role": "Partner"
+      }
+    ]
+  },
+  
+  "contact": {
+    "altImage": "Contact Background",
+    "heading": "Have Questions? Our team is ready to assist you",
+    "formTitle": "GET IN TOUCH WITH US",
+    "formSubtitle": "FILL OUT THE FORM BELOW AND WE'LL GET BACK TO YOU SHORTLY",
+    "fullName": "Full Name",
+    "fullNamePlaceholder": "Full Name*",
+    "email": "Email Address",
+    "emailPlaceholder": "Work Email",
+    "phone": "Phone Number",
+    "phonePlaceholder": "Phone Number*",
+    "inquiry": "Inquiry",
+    "general": "General Inquiry",
+    "support": "Support",
+    "feedback": "Feedback",
+    "subjectPlaceholder": "Subject*",
+    "messagePlaceholder": "Message",
+    "submit": "SUBMIT",
+    "submitting": "Submitting...",
+    "ctaLine1": "Maximize Your Project's Potential Today!",
+    "ctaLine2": "Unlock new opportunities with us!"
+  },
+  "servicesPage": {
+    "title": "Services",
+    "viewMore": "View More",
+    "exterior": {
+      "title": "Exterior Visualization",
+      "description": "Bring your architectural designs to life with stunning 3D renderings of exteriors. Showcase building facades, landscaping, and lighting in high detail for a realistic preview."
+    },
+    "interior": {
+      "title": "Interior Visualization",
+      "description": "Visualize your interior spaces with photorealistic 3D renderings, highlighting layouts, décor, and materials. Perfect for showcasing residential or commercial interiors before implementation."
+    },
+    "commercial": {
+      "title": "Commercial Visualization",
+      "description": "Elevate your commercial spaces with detailed 3D renderings. Present offices, retail, and hospitality projects with creativity and precision for impactful presentations."
+    },
+    "floorPlan": {
+      "title": "3D Floor Plans",
+      "description": "Experience your space in 3D with accurate floor plan models. Understand layout, flow, and dimensions for better design and spatial decisions."
+    },
+    "virtualTour": {
+      "title": "Virtual Tour",
+      "description": "Explore your designs interactively with a 3D virtual tour. Walk through your project and engage with the space in real time for an immersive experience.",
+      "button": "View Virtual Tour"
+    }
+  },
+  "portfolioPage": {
+    "tabs": {
+      "all": "All",
+      "interior": "Interior",
+      "exterior": "Exterior",
+      "commercial": "Commercial",
+      "3dFloorPlan": "3D Floor Plan",
+      "virtualTour": "Virtual Tour",
+      "animations": "Walk Through Animations"
+    }
+  },
+  "caseStudiesPage": {
+    "title": "Case Studies",
+    "viewCaseStudy": "View Case Study",
+    "projects": [
+      {
+        "title": "Azure II Case Study",
+        "description": "Azure II Paje is an upcoming luxury residential development by The Village Group, situated in Paje on Zanzibar's east coast. Designed to offer an unparalleled blend of modern luxury and natural beauty, the project aims to redefine upscale living in the region.",
+        "action": "/azure-II-project",
+        "src": "exterior8"
+      },
+      {
+        "title": "1920 Pierce Case Study",
+        "description": "1920 Pierce offers a refined living experience, blending classic elegance with modern comfort. Ideally located in Hollywood, FL, near Fort Lauderdale and Aventura, it provides residents with premier coastal living and urban convenience.",
+        "action": "/1920-pierce-project",
+        "src": "minervaCaseStudy2"
+      },
+      {
+        "title": "Minerva House Case Study",
+        "description": "Minerva House is a distinguished private residence in New Jersey, embodying a perfect balance of contemporary elegance and comfort. Thoughtfully designed with a focus on refined living, the property seamlessly integrates modern architectural aesthetics with functional luxury, offering an inviting and sophisticated home environment.",
+        "action": "/minerva-house-project",
+        "src": "exterior9"
+      }
+    ]
+  }
+}

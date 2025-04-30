@@ -8,6 +8,7 @@ import {
   navigationMenuTriggerStyle,
 } from "@/components/ui/navigation-menu";
 import { routes } from "@/utils/constants";
+import { useTranslation } from "react-i18next";
 
 interface NavbarProps {
   mobile?: boolean;
@@ -15,6 +16,8 @@ interface NavbarProps {
 }
 
 export function Navbar({ mobile = false, onItemClick }: NavbarProps) {
+  const { t } = useTranslation();
+
   return (
     <NavigationMenu>
       <NavigationMenuList
@@ -27,7 +30,7 @@ export function Navbar({ mobile = false, onItemClick }: NavbarProps) {
                 mobile ? "w-full justify-start" : ""
               }`}
             >
-              Portfolio
+              {t("portfolio")}
             </NavigationMenuLink>
           </a>
         </NavigationMenuItem>
@@ -38,7 +41,7 @@ export function Navbar({ mobile = false, onItemClick }: NavbarProps) {
                 mobile ? "w-full justify-start" : ""
               }`}
             >
-              Case Studies
+              {t("caseStudies")}
             </NavigationMenuLink>
           </a>
         </NavigationMenuItem>
@@ -49,7 +52,7 @@ export function Navbar({ mobile = false, onItemClick }: NavbarProps) {
                 mobile ? "w-full justify-start" : ""
               }`}
             >
-              Services
+              {t("services")}
             </NavigationMenuLink>
           </a>
         </NavigationMenuItem>
@@ -60,7 +63,7 @@ export function Navbar({ mobile = false, onItemClick }: NavbarProps) {
                 mobile ? "w-full justify-start" : ""
               }`}
             >
-              About Us
+              {t("aboutUs")}
             </NavigationMenuLink>
           </a>
         </NavigationMenuItem>

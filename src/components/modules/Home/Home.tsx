@@ -20,10 +20,7 @@ const Home = () => {
         <TrustedPartners />
       </ParallaxSection>
       <Testimonials />
-      <CallToAction
-        tagline="Limited Spots Available!"
-        taglineTwo="Book your free consultation now and start selling faster."
-      />
+      <CallToAction taglineKey="taglineKey" taglineTwoKey="taglineTwoKey" />
       <FAQ />
     </>
   );

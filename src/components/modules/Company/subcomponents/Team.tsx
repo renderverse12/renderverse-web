@@ -1,8 +1,11 @@
 import Page from "@/components/shared/Page";
 import { Button } from "@/components/ui/button";
 import { images } from "@/utils/constants";
+import { useTranslation } from "react-i18next";
 
 const Team = () => {
+  const { t } = useTranslation();
+
   return (
     <Page styling="bg-[#111]">
       <section className="py-20 bg-[#111]">
@@ -11,18 +14,23 @@ const Team = () => {
           data-aos-duration="700"
           className="text-4xl sm:text-5xl font-bold text-center text-gray-200 leading-tight my-8"
         >
-          The Team
+          {t("team.title")}
         </h2>
 
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-10">
+          {/* Member 1 */}
           <div className="flex flex-col items-center">
             <img
               src={images.Team1}
               alt=""
               className="h-64 sm:h-80 md:h-96 object-cover rounded-lg"
             />
-            <p className="font-bold text-lg text-gray-200 mt-4">Syed Maaz</p>
-            <p className="font-bold text-sm text-gray-300/80">Founder & CEO</p>
+            <p className="font-bold text-lg text-gray-200 mt-4">
+              {t("team.members.0.name")}
+            </p>
+            <p className="font-bold text-sm text-gray-300/80">
+              {t("team.members.0.role")}
+            </p>
             <a
               href="https://www.linkedin.com/in/syed-maaz-hussaini-666b40343/"
               target="_blank"
@@ -38,15 +46,18 @@ const Team = () => {
             </a>
           </div>
 
+          {/* Member 2 */}
           <div className="flex flex-col items-center">
             <img
               src={images.Team2}
               alt=""
               className="h-64 sm:h-80 md:h-96 object-cover rounded-lg"
             />
-            <p className="font-bold text-lg text-gray-200 mt-4">Haseeb</p>
+            <p className="font-bold text-lg text-gray-200 mt-4">
+              {t("team.members.1.name")}
+            </p>
             <p className="font-bold text-sm text-gray-300/80">
-              Lead Visualizer
+              {t("team.members.1.role")}
             </p>
             <a
               href="https://www.linkedin.com/in/haseeb-hussaini-9a8485222/"
@@ -63,14 +74,19 @@ const Team = () => {
             </a>
           </div>
 
+          {/* Member 3 */}
           <div className="flex flex-col items-center">
             <img
               src={images.Team3}
               alt=""
               className="h-64 sm:h-80 md:h-96 object-cover rounded-lg"
             />
-            <p className="font-bold text-lg text-gray-200 mt-4">Bilal</p>
-            <p className="font-bold text-sm text-gray-300/80">Partner</p>
+            <p className="font-bold text-lg text-gray-200 mt-4">
+              {t("team.members.2.name")}
+            </p>
+            <p className="font-bold text-sm text-gray-300/80">
+              {t("team.members.2.role")}
+            </p>
           </div>
         </div>
       </section>

@@ -1,6 +1,11 @@
 import { videos } from "@/utils/constants";
+import { useTranslation } from "react-i18next";
+import en from "@/locales/en.json";
+import ar from "@/locales/ar.json";
 
 const Hero = () => {
+  const { t } = useTranslation();
+
   return (
     <section className="w-full h-screen overflow-hidden relative bg-center bg-no-repeat bg-cover text-white">
       <video
@@ -21,18 +26,18 @@ const Hero = () => {
           data-aos="fade-up"
           data-aos-duration="1000"
         >
-          Elevate Sales with Visual Excellence
+          {`${t("hero.title")}`}
         </h1>
         <h2
           className="font-montserrat text-xl md:text-3xl font-bold mt-6 md:mt-10"
           data-aos="fade-up"
           data-aos-duration="1500"
         >
-          Render verse helps developers sell more with cinematic visuals{" "}
+          {`${t("hero.subtitle.part1")}`}{" "}
           <span className="hidden md:inline">
             <br />
           </span>{" "}
-          that turn interest into investment.
+          {t("hero.subtitle.part2")}
         </h2>
       </div>
     </section>

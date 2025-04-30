@@ -1,5 +1,7 @@
 import { useLocation } from "react-router-dom";
+import { useTranslation } from "react-i18next";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
+
 import PortfolioAll from "./subcomponents/PortfolioAll";
 import PortfolioInterior from "./subcomponents/PortfolioInterior";
 import PortfolioExterior from "./subcomponents/PortfolioExterior";
@@ -11,81 +13,72 @@ import PortfolioAnimation from "./subcomponents/PortfolioAnimation";
 
 const Portfolio = () => {
   const location = useLocation();
+  const { t } = useTranslation();
   const searchParams = new URLSearchParams(location.search);
   const activeTab = searchParams.get("tab") || "all";
+
+  const tabs = [
+    {
+      value: "all",
+      label: t("portfolioPage.tabs.all"),
+      content: <PortfolioAll />,
+    },
+    {
+      value: "interior",
+      label: t("portfolioPage.tabs.interior"),
+      content: <PortfolioInterior />,
+    },
+    {
+      value: "exterior",
+      label: t("portfolioPage.tabs.exterior"),
+      content: <PortfolioExterior />,
+    },
+    {
+      value: "commercial",
+      label: t("portfolioPage.tabs.commercial"),
+      content: <PortfolioCommercial />,
+    },
+    {
+      value: "3d-floor-plan",
+      label: t("portfolioPage.tabs.3dFloorPlan"),
+      content: <Portfolio3DFloor />,
+    },
+    {
+      value: "virtualTour",
+      label: t("portfolioPage.tabs.virtualTour"),
+      content: <PortfolioVirtualTour />,
+    },
+    {
+      value: "animations",
+      label: t("portfolioPage.tabs.animations"),
+      content: <PortfolioAnimation />,
+    },
+  ];
 
   return (
     <>
       <PortfolioHero />
 
       <Tabs defaultValue={activeTab} className="bg-[#111] w-full">
-        {/* Overflow scroll on mobile, centered on md+ */}
         <div className="overflow-x-auto w-full py-6 bg-[#111] flex justify-start md:justify-center">
           <TabsList className="flex space-x-6 w-max">
-            <TabsTrigger value="all" className="min-w-max flex-shrink-0 px-4">
-              All
-            </TabsTrigger>
-            <TabsTrigger
-              value="interior"
-              className="min-w-max flex-shrink-0 px-4"
-            >
-              Interior
-            </TabsTrigger>
-            <TabsTrigger
-              value="exterior"
-              className="min-w-max flex-shrink-0 px-4"
-            >
-              Exterior
-            </TabsTrigger>
-            <TabsTrigger
-              value="commercial"
-              className="min-w-max flex-shrink-0 px-4"
-            >
-              Commercial
-            </TabsTrigger>
-            <TabsTrigger
-              value="3d-floor-plan"
-              className="min-w-max flex-shrink-0 px-4"
-            >
-              3D Floor Plan
-            </TabsTrigger>
-            <TabsTrigger
-              value="virtualTour"
-              className="min-w-max flex-shrink-0 px-4"
-            >
-              Virtual Tour
-            </TabsTrigger>
-            <TabsTrigger
-              value="animations"
-              className="min-w-max flex-shrink-0 px-4"
-            >
-              Walk Through Animations
-            </TabsTrigger>
+            {tabs.map((tab) => (
+              <TabsTrigger
+                key={tab.value}
+                value={tab.value}
+                className="min-w-max flex-shrink-0 px-4"
+              >
+                {tab.label}
+              </TabsTrigger>
+            ))}
           </TabsList>
         </div>
 
-        {/* Tab Panels */}
-        <TabsContent value="all">
-          <PortfolioAll />
-        </TabsContent>
-        <TabsContent value="interior">
-          <PortfolioInterior />
-        </TabsContent>
-        <TabsContent value="exterior">
-          <PortfolioExterior />
-        </TabsContent>
-        <TabsContent value="commercial">
-          <PortfolioCommercial />
-        </TabsContent>
-        <TabsContent value="3d-floor-plan">
-          <Portfolio3DFloor />
-        </TabsContent>
-        <TabsContent value="virtualTour">
-          <PortfolioVirtualTour />
-        </TabsContent>
-        <TabsContent value="animations">
-          <PortfolioAnimation />
-        </TabsContent>
+        {tabs.map((tab) => (
+          <TabsContent key={tab.value} value={tab.value}>
+            {tab.content}
+          </TabsContent>
+        ))}
       </Tabs>
     </>
   );
