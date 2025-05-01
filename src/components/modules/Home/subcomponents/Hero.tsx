@@ -1,7 +1,5 @@
 import { videos } from "@/utils/constants";
 import { useTranslation } from "react-i18next";
-import en from "@/locales/en.json";
-import ar from "@/locales/ar.json";
 
 const Hero = () => {
   const { t } = useTranslation();
@@ -29,7 +27,7 @@ const Hero = () => {
           {`${t("hero.title")}`}
         </h1>
         <h2
-          className="font-montserrat text-xl md:text-3xl font-bold mt-6 md:mt-10"
+          className="font-montserrat text-xl md:text-3xl font-bold mt-6 md:mt-10 text-wrap"
           data-aos="fade-up"
           data-aos-duration="1500"
         >

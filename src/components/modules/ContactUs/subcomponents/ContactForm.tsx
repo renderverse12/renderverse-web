@@ -154,7 +154,7 @@ const ContactForm = () => {
         </div>
       </div>
 
-      <ParallaxSection image={images.commercial8} height="h-[40vh]">
+      <ParallaxSection image={images.commercial8} height="h-[55vh]">
         <TrustedPartners />
       </ParallaxSection>
 

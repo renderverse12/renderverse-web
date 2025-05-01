@@ -6,13 +6,13 @@ const TrustedPartners = () => {
   const { t } = useTranslation();
 
   return (
-    <div className="bg-black/40 h-[40vh] py-4">
+    <div className="bg-black/40 h-[55vh] py-4">
       <h2 className="text-5xl font-bold text-gray-200 text-center leading-tight mb-4">
         {t("trustedPartners.title")}
       </h2>
 
       {/* Mobile: static logos in 2-column grid */}
-      <div className="grid grid-cols-2 gap-4 px-4 sm:hidden mb-10">
+      <div className="grid grid-cols-2 gap-4 px-4 sm:hidden">
         <img
           src={images.trustedPartnersWhite1}
           alt=""

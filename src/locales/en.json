@@ -123,7 +123,8 @@
     "contactInfo": {
       "phone": "+92 337-3146719",
       "email": "info@therenderverse.com"
-    }
+    },
+    "copyright": "Render Verse. All rights reserved."
   },
 
   "company": {
@@ -169,7 +170,7 @@
       }
     ]
   },
-  
+
   "contact": {
     "altImage": "Contact Background",
     "heading": "Have Questions? Our team is ready to assist you",
@@ -229,27 +230,197 @@
     }
   },
   "caseStudiesPage": {
-    "title": "Case Studies",
-    "viewCaseStudy": "View Case Study",
-    "projects": [
-      {
-        "title": "Azure II Case Study",
-        "description": "Azure II Paje is an upcoming luxury residential development by The Village Group, situated in Paje on Zanzibar's east coast. Designed to offer an unparalleled blend of modern luxury and natural beauty, the project aims to redefine upscale living in the region.",
-        "action": "/azure-II-project",
-        "src": "exterior8"
-      },
-      {
-        "title": "1920 Pierce Case Study",
-        "description": "1920 Pierce offers a refined living experience, blending classic elegance with modern comfort. Ideally located in Hollywood, FL, near Fort Lauderdale and Aventura, it provides residents with premier coastal living and urban convenience.",
-        "action": "/1920-pierce-project",
-        "src": "minervaCaseStudy2"
-      },
-      {
-        "title": "Minerva House Case Study",
-        "description": "Minerva House is a distinguished private residence in New Jersey, embodying a perfect balance of contemporary elegance and comfort. Thoughtfully designed with a focus on refined living, the property seamlessly integrates modern architectural aesthetics with functional luxury, offering an inviting and sophisticated home environment.",
-        "action": "/minerva-house-project",
-        "src": "exterior9"
+    "heroTitle": "Case Studies",
+    "viewButton": "View Case Study",
+    "azure": {
+      "title": "Azure II Case Study",
+      "description": "Azure II Paje is an upcoming luxury residential development by The Village Group, situated in Paje on Zanzibar's east coast. Designed to offer an unparalleled blend of modern luxury and natural beauty, the project aims to redefine upscale living in the region.",
+      "alt": "Azure II Case Study"
+    },
+    "minerva": {
+      "title": "Minerva House Case Study",
+      "description": "Minerva House is a distinguished private residence in New Jersey, embodying a perfect balance of contemporary elegance and comfort. Thoughtfully designed with a focus on refined living, the property seamlessly integrates modern architectural aesthetics with functional luxury, offering an inviting and sophisticated home environment.",
+      "alt": "Minerva House Case Study"
+    },
+    "pierce": {
+      "title": "1920 Pierce Case Study",
+      "description": "1920 Pierce offers a refined living experience, blending classic elegance with modern comfort. Ideally located in Hollywood, FL, near Fort Lauderdale and Aventura, it provides residents with premier coastal living and urban convenience.",
+      "alt": "1920 Pierce Case Study"
+    }
+  },
+  "landing": {
+    "hero": {
+      "title": "Sell Your Properties Before They're Built!",
+      "subtitle": "We create ultra-realistic 3D visuals that help developers sell faster and impress investors."
+    },
+    "trusted": {
+      "title": "Trusted by Real Estate Leaders",
+      "clients": {
+        "client1": "Client 1",
+        "client2": "Client 2",
+        "client3": "Client 3",
+        "client4": "Client 4",
+        "client5": "Client 5"
       }
-    ]
+    },
+    "why": {
+      "title": "Why Choose Render Verse?",
+      "items": [
+        "Ultra-realistic 3D renderings tailored to your project",
+        "Fast turnaround to meet tight marketing deadlines",
+        "Scalable solutions for single homes up to large developments",
+        "Dedicated support to help you impress investors",
+        "Competitive pricing without sacrificing quality",
+        "Easy revisions until you’re 100% satisfied"
+      ]
+    },
+    "stunning": {
+      "title": "Our Stunning Work",
+      "images": {
+        "alt1": "3D Render 1",
+        "alt2": "3D Render 2",
+        "alt3": "3D Render 3"
+      }
+    },
+    "callToAction": {
+      "taglineKey": "Limited Spots Available!",
+      "taglineTwoKey": "Book your free consultation now and start selling faster."
+    }
+  },
+  "caseStudiesAzure": {
+    "azure": {
+      "name": "Azure II",
+      "callToAction": {
+        "tagline": "Looking to elevate your real estate project with premium 3D visualization?",
+        "taglineTwo": "Contact Render Verse today!"
+      }
+    },
+    "conclusion": {
+      "title": "Conclusion",
+      "paragraph1": "Through the power of 3D architectural visualization, Render Verse successfully translated The Village Group’s vision into a compelling digital experience.",
+      "paragraph2": "The Azure II project now stands as a benchmark for luxury real estate in Zanzibar, leveraging high-quality visuals to drive sales and investor confidence."
+    },
+    "goals": {
+      "title": "Goals",
+      "items": [
+        "To create modern and sleek visuals while embracing Zanzibar’s exotic textures, warm tones, and coastal elegance, ensuring harmony with its stunning environment.",
+        "To maximize ROI, the design seamlessly blended African aesthetics with luxury, creating a unique appeal for high-end investors.",
+        "Deliver precise, high-quality visuals that showcase every interior and exterior detail with true-to-life accuracy."
+      ],
+      "altMain": "Rendered 3D view of Azure II goal imagery",
+      "alt1": "Close-up render highlighting Zanzibar’s textures",
+      "alt3": "Render zoom showing interior detail",
+      "alt4": "Render showcasing exterior architectural elements"
+    },
+    "overview": {
+      "title": "Project Overview",
+      "description": "Azure II Paje is an upcoming luxury residential development by The Village Group, situated in Paje on Zanzibar's east coast. Designed to offer an unparalleled blend of modern luxury and natural beauty, the project aims to redefine upscale living in the region.",
+      "alt": "Azure II project overview render"
+    },
+    "process": {
+      "title": "Process",
+      "steps": [
+        {
+          "heading": "Understanding Client Vision:",
+          "description": "Conducted in-depth consultations and multiple meetings to align with the developer’s branding and sales strategy.",
+          "imageKey": "azureProcess9"
+        },
+        {
+          "heading": "Interior Renderings:",
+          "description": "Created high-end visualizations reflecting a fusion of modern elegance and African-inspired design elements.",
+          "imageKey": "azureProcess8"
+        },
+        {
+          "heading": "Exterior Renderings:",
+          "description": "Developed striking imagery capturing the lush, exotic landscapes of Zanzibar, enhancing the project’s appeal.",
+          "imageKey": "azureProcess1"
+        },
+        {
+          "heading": "Walkthrough Animation:",
+          "description": "Produced immersive interior and exterior animations to provide potential buyers with an engaging and detailed project exploration.",
+          "imageKey": "azureProcess10"
+        },
+        {
+          "heading": "Virtual Tour:",
+          "description": "Designed an interactive 360° tour to offer a dynamic preview of the living experience.",
+          "imageKey": "azureProcess7"
+        }
+      ],
+      "stepAlts": [
+        "Process Step 1",
+        "Process Step 2",
+        "Process Step 3",
+        "Process Step 4",
+        "Process Step 5"
+      ],
+      "itemsUsedLabel": "Items used",
+      "itemsAlts": [
+        "3D model asset",
+        "High-res texture pack",
+        "Lighting setup",
+        "Material library",
+        "Camera rig"
+      ]
+    }
+  },
+  "caseStudiesMinerva": {
+    "name": "Minerva House",
+    "callToAction": {
+      "tagline": "Looking to elevate your real estate project with premium 3D visualization?",
+      "taglineTwo": "Contact Render Verse today!"
+    },
+    "conclusion": {
+      "title": "Conclusion",
+      "paragraph1": "Through advanced 3D architectural visualization, Render Verse successfully brought Minerva House to life, strengthening its positioning in the luxury residential market.",
+      "quote": "The high-quality visuals successfully conveyed the essence of Minerva House, ensuring the design vision was fully realized to meet the owner's expectations."
+    },
+    "goals": {
+      "title": "Goals",
+      "p1": "The objective of Minerva House was to establish a contemporary visual concept that highlights its modern and luxurious appeal.",
+      "p2": "As a private home, the focus was on creating a refined and luxurious living space tailored to the owner’s personal preferences and lifestyle. Additionally, a key focus was placed on accurately representing the selected materials and finishes, ensuring high-quality visualization for marketing and sales purposes.",
+      "imageAlt1": "Rendered view of Minerva House goal image 1",
+      "imageAlt2": "Rendered view of Minerva House goal image 2"
+    },
+    "overview": {
+      "title": "Project Overview",
+      "alt": "Render Verse visualization of Minerva House",
+      "description": "Minerva House is a distinguished private residence in New Jersey, embodying a perfect balance of contemporary elegance and comfort. Thoughtfully designed with a focus on refined living, the property seamlessly integrates modern architectural aesthetics with functional luxury, offering an inviting and sophisticated home environment. This project aims to provide an upscale living experience through meticulous architectural design and high-end finishes."
+    },
+    "process": {
+      "title": "Process",
+      "modeling": "Our journey began with detailed 3D modeling of the property using the provided floor plans, ensuring precise dimensions and spatial accuracy. The client also supplied exact location details, allowing us to replicate the site authentically, setting a strong foundation for achieving photorealistic renderings.",
+      "altModeling": "3D modeling of Minerva House",
+      "interiorDesign": "With inspiration from the client and the creative expertise of our team, we meticulously designed the interiors to reflect a seamless blend of luxury and comfort. We carefully selected and finalized textures that would enhance the elegance and sophistication of the space, aligning perfectly with the client's vision.",
+      "materialsTitle": "Materials used",
+      "finalRenderings": "Following this structured process, we successfully achieved final renderings that precisely matched the client’s expectations and specifications. These visuals presented a true reflection of the project's intended aesthetics and quality, bringing the Minerva House vision to life.",
+      "altFinal": "Final renderings of Minerva House",
+      "altImageGroupOne": "Process image {{index}} from group one",
+      "altImageGroupTwo": "Process image {{index}} from group two",
+      "altMaterials": "Material preview {{index}}"
+    }
+  },
+  "caseStudiesPierce": {
+    "conclusion": {
+      "title": "Conclusion",
+      "description": "Render Verse successfully captured the essence of 1920 Pierce through compelling visualizations, strengthening its market appeal and supporting sales efforts with engaging, photorealistic presentations."
+    },
+    "goals": {
+      "title": "Goals",
+      "description": "Our objective was to create high-quality renderings to enhance project marketing and accelerate apartment sales. The design needed to balance simplicity with sophistication, ensuring it aligned with the client’s vision. Every space within the project was carefully visualized to provide a comprehensive representation. Accuracy in textures and materials was prioritized to maintain authenticity. The final visuals effectively communicated the development’s elegance and functionality.",
+      "imageAlts": ["Goal 2", "Goal 3", "Goal 4"]
+    },
+    "overview": {
+      "title": "Project Overview",
+      "description": "1920 Pierce offers a refined living experience, blending classic elegance with modern comfort. Ideally located in Hollywood, FL, near Fort Lauderdale and Aventura, it provides residents with premier coastal living and urban convenience.",
+      "imageAlt": "1920 Pierce project overview"
+    },
+    "process": {
+      "title": "Process",
+      "description1": "We began with precise 3D modeling using detailed floor plans to ensure spatial accuracy. Interior renderings were created to showcase various apartment layouts, helping buyers visualize space and design. The surrounding environment was carefully recreated in 3D to reflect the project's real-world location.",
+      "description2": "High-quality renderings of the amenities highlighted the luxury and lifestyle features. Material textures and lighting were refined to enhance realism and create an engaging presentation. Finally, a dynamic walkthrough video provided an immersive preview of the development.",
+      "altImage1": "3D modeling process",
+      "altStep": "Process step {{index}}",
+      "altAmenity": "Amenity {{index}}"
+    }
   }
 }

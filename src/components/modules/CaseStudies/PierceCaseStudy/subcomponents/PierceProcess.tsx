@@ -1,41 +1,37 @@
 import { images } from "@/utils/constants";
+import { useTranslation } from "react-i18next";
 
 const PierceProcess = () => {
+  const { t } = useTranslation();
+
   return (
     <section className="bg-[#111] py-6 md:py-8 space-y-6 md:space-y-8 px-4 md:px-0">
-      {/* Responsive Heading */}
       <h2
         data-aos="fade-up"
         data-aos-duration="1000"
         className="text-2xl md:text-4xl font-bold text-gray-100 leading-tight py-2 text-center px-4 md:px-60"
       >
-        Process
+        {t("caseStudiesPierce.process.title")}
       </h2>
 
       <div className="flex flex-col gap-y-6 md:gap-y-10">
-        {/* Text + Image Section - Stacks on mobile */}
         <div className="flex flex-col md:flex-row items-center justify-center gap-6 md:gap-x-10 text-gray-300/90 font-semibold text-base md:text-xl px-4 md:px-60">
           <p
             data-aos="fade-up"
             data-aos-duration="1000"
             className="w-full md:w-1/2"
           >
-            We began with precise 3D modeling using detailed floor plans to
-            ensure spatial accuracy. Interior renderings were created to
-            showcase various apartment layouts, helping buyers visualize space
-            and design. The surrounding environment was carefully recreated in
-            3D to reflect the project's real-world location.
+            {t("caseStudiesPierce.process.description1")}
           </p>
           <img
             src={images.pierceProcess1}
             className="w-full md:w-auto h-64 md:h-[25rem] object-cover"
             data-aos="zoom-in"
             data-aos-duration="700"
-            alt="3D modeling process"
+            alt={t("caseStudiesPierce.process.altImage1")}
           />
         </div>
 
-        {/* First Image Grid - 2 columns on mobile, more on desktop */}
         <div className="grid grid-cols-2 sm:grid-cols-3 gap-3 md:gap-5 px-4 md:px-0">
           {[
             images.pierceProcess9,
@@ -56,26 +52,22 @@ const PierceProcess = () => {
               <img
                 src={img}
                 className="w-full h-full object-cover"
-                alt={`Process step ${index + 1}`}
+                alt={t("caseStudiesPierce.process.altStep", {
+                  index: index + 1,
+                })}
               />
             </div>
           ))}
         </div>
 
-        {/* Centered Text */}
         <p
           data-aos="fade-up"
           data-aos-duration="1000"
           className="text-center text-gray-300/90 font-semibold text-base md:text-xl px-4 md:px-60"
         >
-          High-quality renderings of the amenities highlighted the luxury and
-          lifestyle features. Material textures and lighting were refined to
-          enhance realism and create an engaging presentation. Finally, a
-          dynamic walkthrough video provided an immersive preview of the
-          development.
+          {t("caseStudiesPierce.process.description2")}
         </p>
 
-        {/* Second Image Grid - 2 columns on mobile, 4 on desktop */}
         <div className="grid grid-cols-2 md:flex items-center justify-center gap-3 md:gap-x-5 px-4 md:px-0">
           {[
             images.pierceProcess10,
@@ -91,7 +83,9 @@ const PierceProcess = () => {
               data-aos-delay={`${index * 200}`}
               data-aos-duration="600"
               data-aos-easing="ease-in-out"
-              alt={`Amenity ${index + 1}`}
+              alt={t("caseStudiesPierce.process.altAmenity", {
+                index: index + 1,
+              })}
             />
           ))}
         </div>

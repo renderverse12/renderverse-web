@@ -1,8 +1,11 @@
 import Masonry from "@/blocks/Components/Masonry/Masonry";
 import Page from "@/components/shared/Page";
 import { images } from "@/utils/constants";
+import { useTranslation } from "react-i18next";
 
 const AzureConclusion = () => {
+  const { t } = useTranslation();
+
   const dataOne = [
     { id: 1, image: images.azureConclusion1, height: 1000 },
     { id: 2, image: images.azureConclusion7, height: 800 },
@@ -25,24 +28,20 @@ const AzureConclusion = () => {
     <Page styling="bg-[#111]">
       <section className="bg-[#111] py-10 px-4 sm:px-6 md:px-10 space-y-10">
         <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-gray-100 leading-tight text-center">
-          Conclusion
+          {t("caseStudiesAzure.conclusion.title")}
         </h2>
 
         <Masonry data={dataOne} />
 
         <p className="text-center text-gray-300/90 font-semibold text-lg sm:text-xl max-w-3xl mx-auto">
-          Through the power of 3D architectural visualization, Render Verse
-          successfully translated The Village Group’s vision into a compelling
-          digital experience.
+          {t("caseStudiesAzure.conclusion.paragraph1")}
         </p>
 
         <Masonry data={dataTwo} />
 
         <i>
           <p className="text-center text-gray-300/90 font-bold text-lg sm:text-xl max-w-4xl mx-auto">
-            The Azure II project now stands as a benchmark for luxury real
-            estate in Zanzibar, leveraging high-quality visuals to drive sales
-            and investor confidence.
+            {t("caseStudiesAzure.conclusion.paragraph2")}
           </p>
         </i>
       </section>

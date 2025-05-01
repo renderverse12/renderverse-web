@@ -151,7 +151,7 @@ const Footer = () => {
 
           <Separator className="my-8" />
           <p className="text-gray-300/90 py-4 text-center text-xs">
-            &copy; {new Date().getFullYear()} Render Verse. All rights reserved.
+            &copy; {new Date().getFullYear()} {t("footer.copyright")}
           </p>
         </div>
       </footer>
